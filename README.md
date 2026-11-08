@@ -1,4 +1,4 @@
-# House Edge
+# House Edge(Team name Razor)
 
 **Participant guide · TAMU Datathon 2026**
 
