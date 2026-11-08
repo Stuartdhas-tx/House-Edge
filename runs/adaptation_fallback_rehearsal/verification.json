@@ -1,0 +1,29 @@
+{
+  "commands": [
+    [
+      "/Users/stuarts/.pyenv/versions/3.12.12/bin/python",
+      "check_submission.py",
+      "runs/adaptation_fallback_rehearsal/submission.csv"
+    ],
+    [
+      "/Users/stuarts/.pyenv/versions/3.12.12/bin/python",
+      "build_entry.py",
+      "--starter",
+      "runs/adaptation_fallback_rehearsal",
+      "--out",
+      "runs/adaptation_fallback_rehearsal/entry.zip"
+    ],
+    [
+      "/Users/stuarts/.pyenv/versions/3.12.12/bin/python",
+      "tools/verify_entry.py",
+      "runs/adaptation_fallback_rehearsal/entry.zip",
+      "runs/adaptation_fallback_rehearsal/submission.csv",
+      "--python",
+      "/Users/stuarts/.local/share/uv/python/cpython-3.13.9-macos-aarch64-none/bin/python3.13"
+    ]
+  ],
+  "status": "passed",
+  "data_round": "main",
+  "validation_read": false,
+  "seconds": 3.5434074997901917
+}

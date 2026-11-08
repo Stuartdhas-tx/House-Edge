@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "method": "pooled_recent",
+    "prior_strength": 20.0,
+    "half_life": 24.0
+  },
+  "purpose": "Rehearsal on MAIN data for new no-validation-read fallback workflow; not an Adaptation entry."
+}

@@ -1,0 +1,14 @@
+{
+  "exp5_calibration_exact_equal": true,
+  "max_probability_difference": {
+    "exp5_cal": 0.0,
+    "exp5_uncal": 0.0,
+    "full_xgb": 0.0
+  },
+  "reference": "runs/xgb_cv",
+  "result_summaries_exact_equal": {
+    "exp5_cal": true,
+    "exp5_uncal": true,
+    "full_xgb": true
+  }
+}

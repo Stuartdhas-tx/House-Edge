@@ -1,0 +1,23 @@
+{
+  "config": {
+    "alpha": 0.5,
+    "beta": 1.0,
+    "d_max": 200,
+    "d_min": 8,
+    "d_step": 4,
+    "eb_iterations": 20,
+    "min_pre": 8,
+    "model": "change_point",
+    "no_change_prior": 0.5,
+    "prior_smoothing": 1.0,
+    "shared_prior": 0.5,
+    "size_strength": 50
+  },
+  "python": "3.12.12",
+  "seconds": {
+    "fit": 5.230558333918452,
+    "predict_test": 4.207607417367399,
+    "predict_validation": 2.123214832507074
+  },
+  "train_only_fit": true
+}

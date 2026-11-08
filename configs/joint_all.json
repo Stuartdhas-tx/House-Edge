@@ -1,0 +1,30 @@
+{
+  "model": "joint_size",
+  "alpha": 0.5,
+  "beta": 1.0,
+  "no_change_prior": 0.5,
+  "shared_prior": 0.5,
+  "size_strength": 50,
+  "prior_smoothing": 1.0,
+  "eb_iterations": 20,
+  "d_min": 8,
+  "d_max": 200,
+  "d_step": 4,
+  "min_pre": 8,
+  "calibration_slope": 1.0872328418843336,
+  "calibration_intercepts": {
+    "balanced": 0.06747055623225917,
+    "jackpot": -0.19682500442047024,
+    "steady": 0.03146856864062446
+  },
+  "size_model": "regime",
+  "regime_temper": 0.75,
+  "em_iterations": 200,
+  "orient_strength": 40.0,
+  "contrast_threshold": 0.5,
+  "size_em_iterations": 100,
+  "joint_size_evidence": true,
+  "joint_size_common": false,
+  "joint_average": true,
+  "joint_size_missing_mixture": true
+}

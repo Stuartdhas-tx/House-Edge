@@ -1,0 +1,117 @@
+{
+  "artifact_sha256": {
+    "entry.zip": "26fc295873d1bcf8952c43c67a9fac4dfecb20716d1a8d1c796c3767bfbed615",
+    "submission.csv": "0fd84198a9a520e265a89887542fa11279348369b847420cad4b393bfac73afa",
+    "validation_predictions.csv": "ff33e83d26014ee7dae5bf0c253a84f8d9fae6689a89ac4b25320942baf9115c"
+  },
+  "base_config": {
+    "alpha": 0.5,
+    "beta": 1.0,
+    "calibration_intercepts": {
+      "balanced": 0.0,
+      "jackpot": 0.0,
+      "steady": 0.0
+    },
+    "calibration_slope": 1.0,
+    "contrast_threshold": 0.5,
+    "d_max": 200,
+    "d_min": 8,
+    "d_step": 4,
+    "eb_iterations": 20,
+    "em_iterations": 200,
+    "min_pre": 8,
+    "model": "size_rule",
+    "no_change_prior": 0.5,
+    "orient_strength": 40.0,
+    "prior_smoothing": 1.0,
+    "regime_temper": 0.75,
+    "shared_prior": 0.5,
+    "size_em_iterations": 100,
+    "size_model": "regime",
+    "size_strength": 50
+  },
+  "checkpoint_sha256": {
+    "base_model.json": "00cebba8103251669ad653200c7304722794bd2f9312b7a2b580087f0c7aaceb",
+    "booster.json": "b0b6b5a1da4bb23f4b2a3058dbf11fd36e09176fdac629ccb21b28a2db5727ef",
+    "postprocess.json": "145204ed249a9170502b459a93357079c6341f3dd945f9e74739d084e87dfe96",
+    "reproduce.json": "28215ead99bf0ada0a31cc5b3ed4d634449f537df70d40c2fe8f965b19638fdc"
+  },
+  "original_oof_sha256": "61d0a64d9ba458a938013399aa404ed13ff792e60511cb4ac8220106f6ba1bf2",
+  "postprocess": {
+    "kind": "full_xgb"
+  },
+  "prediction_source_sha256": {
+    "house_edge/__init__.py": "5a197cf40284effeb8a04674938f29559df1c7b8772df9cab32d871b5cedb2e8",
+    "house_edge/calibrated.py": "d33f78c36e0c18c7eab0171f2d189d97a1494586eff0cbf512cc07ecfcd0014f",
+    "house_edge/change_point.py": "df12b9e8856a2c47662d3ace78783d0ac496d0a080531b85943c833ae0814903",
+    "house_edge/followup_predict.py": "4007487d0984bf63fc6f351d5b0dca8174bde40bb581c093ba9dde885f2c7512",
+    "house_edge/history.py": "0ebffd3ea021c018bf2ec3ddc0bf85bf46a7b33303512d264d004fee0afad937",
+    "house_edge/joint_size.py": "57ed4e2e12ef76cd6dd28849cd816b6f77c745d242da3c4feaf0a38527e05708",
+    "house_edge/oriented.py": "8d602c0af227694f0bcff904021e5fcbf1bd9207ae69b679e934cf8513c985e1",
+    "house_edge/pair_rule.py": "d89af30a7288e009b58b72759118d7d405bfcfdc828fee10498e5b6965199548",
+    "house_edge/registry.py": "d1a1172840290d48afab81df18e4d0b281c0cec4d7a630ce8d9c8f017dbfd0a7",
+    "house_edge/rules.py": "9f1e1e63eb02fa6dccca43cac1160059ef5bbef208eedbc516a7b27469ac1429",
+    "house_edge/signal_levels.py": "fc314da15bfee0753ce7a60ee2002fac21c1f0c840b87efd6bc33ba11ba2a049",
+    "house_edge/size_rule.py": "b425f64e0a7f2cd9325a1ef1f1a540a271410422019220d576cdf9d754c84b99",
+    "house_edge/xgb_features_portable.py": "5f59e24fab0f3ebf7b73b500c253c8b4ec6c82697305cf6d8722314f98e84ac5",
+    "house_edge/xgb_portable.py": "2a0b109ffe7ed44625d2a67e3494190928590f0bbbe2fdf70ea83dd8efcb31e5",
+    "slot_forecasting/__init__.py": "49490dd5af60e50f1dd37048845f7b056b6f2b83a30b53031b4f12bb4c1e22e2",
+    "slot_forecasting/baseline.py": "c7e73421a47800812c54c2b58cb324446d173ebdedaaf06fc15512046f9f87c9",
+    "slot_forecasting/contest.py": "411c7586b26cbc579ac32489b5306a4e87942aac58738cdec0e7e8ce7d3cc442",
+    "slot_forecasting/experiments.py": "a0c06144922f8b7f49d9c058c963ffc2b49cd555bb474a92a335d330044ce036",
+    "slot_forecasting/io.py": "3ef8706676971936080da79be2c073e2a12472ab3a892757a9c2aff8712ab76f",
+    "slot_forecasting/rounds.py": "e048ef615df8c291305c7a0c642b85bad9df80103c6c7c2e1756cd6ff7508955",
+    "slot_forecasting/schema.py": "2a8ab28d29865faf0ee533c17af6b425e12b96be381825f3b23f241479645b22",
+    "slot_forecasting/scoring.py": "477c66c6c5449ca65f77ec4867a9b80934a52c892b045abe32e6471d2c8d4edd",
+    "slot_forecasting/starter.py": "33f50997aa73969d3e0fc09df6c88ad00032026b62d680ab8f76d055bd0f1069",
+    "slot_forecasting/submission_contract.py": "d88207f8279d6800b06bbad79dc24187df6816ae89defad0b8ff0c80c0ae499c",
+    "slot_forecasting/transition.py": "eb37e6b87c76f4c2f9643cbfdfe69d19980760efbaa019ee5a1984c839f2576f"
+  },
+  "reproduction_verified": true,
+  "seconds": {
+    "base_fit": 7.078727500513196,
+    "postprocessor_fit": 6.922688916325569,
+    "predict_test": 14.521479374729097,
+    "predict_validation": 7.708543333224952,
+    "total": 37.474745124578476
+  },
+  "selected": "full_xgb",
+  "selection_report_sha256": "0c02971ed820b624655febd497cb8e78726b2676b373c3aeefd9e991ac6e1aee",
+  "train_sha256": {
+    "conditions.csv": "18891aa27d581b36ef7e7a18a7154f697d70054725cafec6a9c4a8665a5a4894",
+    "history.csv": "46a1e783a1b222dc2de33bc72259207e3d013135d1229af9669ffcd454116217",
+    "labels.csv": "f6b3a2ca73888b91bb9a38d0ca52f449062ce70534bef9776ad4f53fc713b46a",
+    "queries.csv": "96cbf59fe0b340981f3f2958dde3305162215ae911d0559d6f34764e74460846",
+    "sample_submission.csv": "1a8c90c3a66f4d01299de089e2aea2834d7e8bdfb963aa3ffabfa6e2b1f6c870"
+  },
+  "training_versions": {
+    "numpy": "2.4.6",
+    "python": "3.12.12",
+    "scipy": "1.18.0",
+    "xgboost": "3.4.1"
+  },
+  "uploaded": false,
+  "validation_scored": true,
+  "validation_targets_read": false,
+  "xgb_settings": {
+    "parameters": {
+      "alpha": 2,
+      "booster": "gbtree",
+      "colsample_bytree": 0.8,
+      "device": "cpu",
+      "eta": 0.03,
+      "lambda": 50,
+      "max_bin": 128,
+      "max_depth": 2,
+      "min_child_weight": 40,
+      "nthread": 2,
+      "num_class": 5,
+      "objective": "multi:softprob",
+      "seed": 20261107,
+      "subsample": 0.8,
+      "tree_method": "hist",
+      "verbosity": 1
+    },
+    "rounds": 100
+  }
+}

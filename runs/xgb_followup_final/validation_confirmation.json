@@ -1,0 +1,161 @@
+{
+  "audit_caveat": "Previously inspected public validation; historical tuning/audit halves are not independent. No settings changed after this comparison.",
+  "baseline": {
+    "by_condition": {
+      "drift": {
+        "episodes": 24,
+        "error": 0.0057548258540886695,
+        "loss_ratio": 0.03031505397708668,
+        "queries": 192,
+        "reference_error": 0.18983393064179913
+      },
+      "shared_change": {
+        "episodes": 24,
+        "error": 0.005369632356571115,
+        "loss_ratio": 0.026121634292739605,
+        "queries": 192,
+        "reference_error": 0.20556264957983816
+      },
+      "short_history": {
+        "episodes": 24,
+        "error": 0.015796359885806747,
+        "loss_ratio": 0.08907314147388426,
+        "queries": 192,
+        "reference_error": 0.1773414479878668
+      },
+      "stable": {
+        "episodes": 24,
+        "error": 0.005925310043077267,
+        "loss_ratio": 0.03019253911695245,
+        "queries": 192,
+        "reference_error": 0.19625080289290195
+      }
+    },
+    "contest_version": "temporal-adaptation-v3-60-40",
+    "max_points": 60.0,
+    "mean_loss_ratio": 0.043925592215165746,
+    "round": "main",
+    "season_id": "5fffdc4d0c700bbf61c3f911",
+    "technical_points": 57.47536074164304
+  },
+  "baseline_validation_sha256": "f1d22d50c3b1e8af666e6f52273f51984d6ba1a0ea9094da0d5d524167035823",
+  "bootstrap_method": "5000 paired resamples of complete episodes within each condition; candidate, baseline and reference errors resampled together; seed314159.",
+  "candidate": {
+    "by_condition": {
+      "drift": {
+        "episodes": 24,
+        "error": 0.005437326135992289,
+        "loss_ratio": 0.02864254097046577,
+        "queries": 192,
+        "reference_error": 0.18983393064179913
+      },
+      "shared_change": {
+        "episodes": 24,
+        "error": 0.005817358145875621,
+        "loss_ratio": 0.028299684586504743,
+        "queries": 192,
+        "reference_error": 0.20556264957983816
+      },
+      "short_history": {
+        "episodes": 24,
+        "error": 0.014322757421855752,
+        "loss_ratio": 0.08076373337628141,
+        "queries": 192,
+        "reference_error": 0.1773414479878668
+      },
+      "stable": {
+        "episodes": 24,
+        "error": 0.005304515746413701,
+        "loss_ratio": 0.027029269018117,
+        "queries": 192,
+        "reference_error": 0.19625080289290195
+      }
+    },
+    "contest_version": "temporal-adaptation-v3-60-40",
+    "max_points": 60.0,
+    "mean_loss_ratio": 0.04118380698784223,
+    "round": "main",
+    "season_id": "5fffdc4d0c700bbf61c3f911",
+    "technical_points": 57.6267125912962
+  },
+  "candidate_kind": "full_xgb",
+  "condition_ratio_changes": {
+    "drift": -0.0016725130066209092,
+    "shared_change": 0.002178050293765138,
+    "short_history": -0.008309408097602847,
+    "stable": -0.0031632700988354495
+  },
+  "design": "One frozen candidate versus the existing EXP-5 entry, after TRAIN-only selection and reproduction.",
+  "gain_points": 0.1513518496531603,
+  "historical_halves_baseline": {
+    "audit": {
+      "drift": 0.0255,
+      "mean_ratio": 0.0427,
+      "points": 57.5412,
+      "shared_change": 0.0345,
+      "short_history": 0.0863,
+      "stable": 0.0247
+    },
+    "full": {
+      "drift": 0.0303,
+      "mean_ratio": 0.0439,
+      "points": 57.4754,
+      "shared_change": 0.0261,
+      "short_history": 0.0891,
+      "stable": 0.0302
+    },
+    "tuning": {
+      "drift": 0.0346,
+      "mean_ratio": 0.0449,
+      "points": 57.4242,
+      "shared_change": 0.0182,
+      "short_history": 0.0916,
+      "stable": 0.0351
+    }
+  },
+  "historical_halves_candidate": {
+    "audit": {
+      "drift": 0.0224,
+      "mean_ratio": 0.0406,
+      "points": 57.6571,
+      "shared_change": 0.0382,
+      "short_history": 0.0778,
+      "stable": 0.0242
+    },
+    "full": {
+      "drift": 0.0286,
+      "mean_ratio": 0.0412,
+      "points": 57.6267,
+      "shared_change": 0.0283,
+      "short_history": 0.0808,
+      "stable": 0.027
+    },
+    "tuning": {
+      "drift": 0.0342,
+      "mean_ratio": 0.0415,
+      "points": 57.6084,
+      "shared_change": 0.019,
+      "short_history": 0.0833,
+      "stable": 0.0296
+    }
+  },
+  "paired_episode_bootstrap95_gain": [
+    -0.025974941429848995,
+    0.34749828703237784
+  ],
+  "passes_promotion_rule": true,
+  "promotion_rule": "Point gain >=0.10 on the local60-point scale, no condition ratio deterioration >.005, plus matching passed reproduction.",
+  "test_csv_sha256": "0fd84198a9a520e265a89887542fa11279348369b847420cad4b393bfac73afa",
+  "uploaded": false,
+  "validation_csv_sha256": "ff33e83d26014ee7dae5bf0c253a84f8d9fae6689a89ac4b25320942baf9115c",
+  "validation_input_sha256": {
+    "conditions.csv": "ebcca7597bbdfa532c5254b92903e66522a710502a6f70689c3de311f75c29b1",
+    "history.csv": "4b7ef4789750b7459eb085be3449ea8bd9dfd31441a928ad391a1376a44f8fe4",
+    "labels.csv": "3881ed7e2451573f023d09d85b737cdc99a00b4b224eb020f371c02b9f9a91e2",
+    "queries.csv": "168b7f6365a4f51084437c0071636b102ca3fb4bf0347b912778c51714fc48f2",
+    "reference.csv": "bb396d9e4d20bf4004374f9ab781f41aaa8b730e61887c1969be534efeb1e6c6",
+    "sample_submission.csv": "6fda54420c0573d025b0639a4b091fedce07689a83621292bf777351e853e48f",
+    "targets.csv": "93b6e978f6818d2456dcb677fddb6ba243e864cef56e33a4bf94bde5ba4b51f3"
+  },
+  "zip_sha256": "26fc295873d1bcf8952c43c67a9fac4dfecb20716d1a8d1c796c3767bfbed615"
+}

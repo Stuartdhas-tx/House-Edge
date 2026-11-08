@@ -1,0 +1,23 @@
+{
+ "model": "calibrated_change_point",
+ "alpha": 0.5,
+ "beta": 1.0,
+ "no_change_prior": 0.5,
+ "shared_prior": 0.5,
+ "size_strength": 50,
+ "prior_smoothing": 1.0,
+ "eb_iterations": 20,
+ "d_min": 8,
+ "d_max": 200,
+ "d_step": 4,
+ "min_pre": 8,
+ "calibration_slope": 1.1274243423319583,
+ "calibration_intercepts": {
+  "balanced": 0.16443694701207776,
+  "jackpot": 0.05333520365087334,
+  "steady": -0.15420948602287937
+ },
+ "size_model": "regime",
+ "regime_temper": 0.75,
+ "em_iterations": 200
+}

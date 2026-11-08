@@ -1,0 +1,18 @@
+{
+  "config": {
+    "alpha": 0.5,
+    "beta": 2.0,
+    "eb_iterations": 20,
+    "half_life": 12,
+    "model": "pair_rule",
+    "prior_smoothing": 1.0,
+    "size_strength": 50
+  },
+  "python": "3.12.12",
+  "seconds": {
+    "fit": 1.082088583149016,
+    "predict_test": 1.1919187922030687,
+    "predict_validation": 0.5869530821219087
+  },
+  "train_only_fit": true
+}

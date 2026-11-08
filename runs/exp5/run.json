@@ -1,0 +1,35 @@
+{
+  "config": {
+    "alpha": 0.5,
+    "beta": 1.0,
+    "calibration_intercepts": {
+      "balanced": 0.0334418490878898,
+      "jackpot": -0.20560371430850516,
+      "steady": 0.03782074748571802
+    },
+    "calibration_slope": 1.093988191710014,
+    "contrast_threshold": 0.5,
+    "d_max": 200,
+    "d_min": 8,
+    "d_step": 4,
+    "eb_iterations": 20,
+    "em_iterations": 200,
+    "min_pre": 8,
+    "model": "size_rule",
+    "no_change_prior": 0.5,
+    "orient_strength": 40.0,
+    "prior_smoothing": 1.0,
+    "regime_temper": 0.75,
+    "shared_prior": 0.5,
+    "size_em_iterations": 100,
+    "size_model": "regime",
+    "size_strength": 50
+  },
+  "python": "3.12.12",
+  "seconds": {
+    "fit": 7.484219457954168,
+    "predict_test": 11.441917167045176,
+    "predict_validation": 5.841380416415632
+  },
+  "train_only_fit": true
+}

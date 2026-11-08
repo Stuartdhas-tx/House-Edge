@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reproduction_runs": [
+    {
+      "python": "Python 3.12.12",
+      "max_abs_probability_diff": 0,
+      "byte_identical": true,
+      "zip_sha256": "26fc295873d1bcf8952c43c67a9fac4dfecb20716d1a8d1c796c3767bfbed615",
+      "csv_sha256": "0fd84198a9a520e265a89887542fa11279348369b847420cad4b393bfac73afa"
+    },
+    {
+      "python": "Python 3.13.9",
+      "max_abs_probability_diff": 0,
+      "byte_identical": true,
+      "zip_sha256": "26fc295873d1bcf8952c43c67a9fac4dfecb20716d1a8d1c796c3767bfbed615",
+      "csv_sha256": "0fd84198a9a520e265a89887542fa11279348369b847420cad4b393bfac73afa"
+    }
+  ],
+  "format_and_leakage_output": "VALID FORMAT: 1536 queries | main | test\nSeason: 5fffdc4d0c700bbf61c3f911\nSHA-256: 0fd84198a9a520e265a89887542fa11279348369b847420cad4b393bfac73afa\nTest answers are private; this check does not calculate your event score.\nLocal check only. Nothing was uploaded. Acceptance and code reproduction are separate.\ncross-machine episode pooling leak test passed\nLEAK TESTS PASSED: 21 truncation/shuffle checks, lag-exactness, missing!=zero, kit future guard, determinism\n",
+  "scope": "Fresh-process ZIP reproduction on the exact frozen CSV; original baseline leakage suite plus follow-up wrapper/feature tests.",
+  "uploaded": false
+}

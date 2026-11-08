@@ -1,0 +1,26 @@
+{
+  "audit": {
+    "drift": 0.0813,
+    "mean_ratio": 0.0904,
+    "points": 55.0243,
+    "shared_change": 0.093,
+    "short_history": 0.1127,
+    "stable": 0.0747
+  },
+  "full": {
+    "drift": 0.0822,
+    "mean_ratio": 0.0887,
+    "points": 55.1113,
+    "shared_change": 0.076,
+    "short_history": 0.1237,
+    "stable": 0.073
+  },
+  "tuning": {
+    "drift": 0.0829,
+    "mean_ratio": 0.0869,
+    "points": 55.2024,
+    "shared_change": 0.06,
+    "short_history": 0.1334,
+    "stable": 0.0714
+  }
+}

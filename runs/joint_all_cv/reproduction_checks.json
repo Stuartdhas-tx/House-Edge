@@ -1,0 +1,33 @@
+{
+  "four_variant_calibration_parameters_exact_equal": true,
+  "four_variant_result_summaries_exact_equal": true,
+  "identical_regime_limiting_case": "All five variants collapse when A=B on 768 train queries; maximum probability difference 1.1091128016005314e-13.",
+  "legacy_uncalibrated_baseline_max_aggregate_difference": 5.551115123125783e-17,
+  "legacy_uncalibrated_baseline_reference": "runs/exp5_cv/cv.json:exp5_uncal",
+  "reference_four_variant_run": "runs/joint_size_cv",
+  "shared_npz_arrays_exact_equal": {
+    "common_mix_cal": true,
+    "common_mix_raw_size": true,
+    "common_mix_raw_win": true,
+    "common_mix_uncal": true,
+    "episode_id": true,
+    "exp5_cal": true,
+    "exp5_raw_size": true,
+    "exp5_raw_win": true,
+    "exp5_uncal": true,
+    "fold": true,
+    "joint_mix_cal": true,
+    "joint_mix_raw_size": true,
+    "joint_mix_raw_win": true,
+    "joint_mix_uncal": true,
+    "joint_size_cal": true,
+    "joint_size_raw_size": true,
+    "joint_size_raw_win": true,
+    "joint_size_uncal": true,
+    "outcome": true,
+    "query_id": true,
+    "real": true,
+    "tick": true
+  },
+  "shared_npz_max_absolute_float_difference": 0.0
+}
